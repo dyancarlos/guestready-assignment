@@ -1,0 +1,5 @@
+<%= form_tag search_rentals_path, method: :get do %>
+  <%= text_field_tag :address %><br />
+  <%= text_field_tag :long_term_value %><br />
+  <%= submit_tag "Search" %>
+<% end %>

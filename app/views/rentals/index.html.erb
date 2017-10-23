@@ -1,5 +1,18 @@
 <%= form_tag search_rentals_path, method: :get do %>
+  <% if @rental %>
+  <% if @rental.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= t("validations.error") %></h2>
+      <ul>
+        <% @rental.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% end %>
+
   <%= text_field_tag :address %><br />
   <%= text_field_tag :long_term_value %><br />
-  <%= submit_tag "Search" %>
+  <%= submit_tag t("rental.form.submit") %>
 <% end %>

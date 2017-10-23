@@ -8,7 +8,7 @@ class SearchRentalService
   end
 
   def long_term
-    search_long_term_for_address.data
+    search_long_term_for_address.data.average_income
   end
 
   private

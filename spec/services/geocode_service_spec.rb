@@ -2,18 +2,14 @@
 require "rails_helper"
 
 describe GeocodeService do
-  let(:url) do
-    "https://maps.googleapis.com/maps/api/geocode/json?address=São Paulo, SP, Brasil&key=AIzaSyCWV2kkwCHooSMVJ4agaeRa3qdt2Xyzbrs"
-  end
-
   let(:geocode) do
     GeocodeService.new("São Paulo, SP, Brasil")
   end
 
   context "success to get geocode" do
     before do
-      stub_request(:get, url).
-        with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
+      stub_request(:get, "https://maps.googleapis.com/maps/api/geocode/json?address=S%C3%A3o%20Paulo,%20SP,%20Brasil&key=AIzaSyCWV2kkwCHooSMVJ4agaeRa3qdt2Xyzbrs").
+        with(headers: {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
         to_return(status: 200, body: File.new('spec/geocode.json').read, headers: {})
     end
 

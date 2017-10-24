@@ -31,6 +31,7 @@ class SearchRentalService
       'duration'        => '1_year',
       'occupancy_rate'  => '100',
       'person_capacity' => '2',
+      'currency'       => 'USD',
       'lat'             => @geocode[:lat],
       'lng'             => @geocode[:lng]
     }

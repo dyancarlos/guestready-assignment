@@ -3,13 +3,15 @@
 <table class="u-full-width">
   <thead>
     <tr>
-      <th>Long Term</th>
-      <th>Long Term Airbnb</th>
-      <th>Difference</th>
+      <th><%= t("search.address") %></th>
+      <th><%= t("search.long_term") %></th>
+      <th><%= t("search.long_term_airbnb") %></th>
+      <th><%= t("search.difference") %></th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td><%= @address %></td>
       <td><%= @long_term_default %></td>
       <td><%= @long_term_airbnb %></td>
       <td>-</td>

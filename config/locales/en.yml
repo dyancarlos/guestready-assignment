@@ -1,6 +1,10 @@
 en:
   search:
     title: "Search Result"
+    address: "Address"
+    long_term: "Long Term"
+    long_term_airbnb: "Long Term Airbnb"
+    difference: "Difference"
   rental:
     form:
       error: "Ops! Something went wrong!"

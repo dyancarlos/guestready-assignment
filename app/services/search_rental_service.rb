@@ -4,7 +4,7 @@ class SearchRentalService
   AIRBNB_URI = "https://www.airbnb.com.br/wmpw_data".freeze
 
   def initialize(address)
-    @address = address
+    @geocode = GeocodeService.new(address).geocode_formated
   end
 
   def long_term
@@ -31,7 +31,8 @@ class SearchRentalService
       'duration'        => '1_year',
       'occupancy_rate'  => '100',
       'person_capacity' => '2',
-      'address'         => @address
+      'lat'             => @geocode[:lat],
+      'lng'             => @geocode[:lng]
     }
   end
 end

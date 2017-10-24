@@ -19,6 +19,7 @@ group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'guard-rspec', require: false
   gem 'webmock'
+  gem 'rails-controller-testing'
 end
 
 group :development, :test do

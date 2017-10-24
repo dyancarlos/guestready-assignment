@@ -5,6 +5,7 @@ en:
     long_term: "Long Term"
     long_term_airbnb: "Long Term Airbnb"
     difference: "Difference"
+    link_new_search: "New Search"
   rental:
     form:
       error: "Ops! Something went wrong!"

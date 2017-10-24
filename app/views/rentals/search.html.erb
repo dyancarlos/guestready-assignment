@@ -11,10 +11,12 @@
   </thead>
   <tbody>
     <tr>
-      <td><%= @address %></td>
-      <td><%= @long_term_default %></td>
+      <td><%= @rental.address %></td>
+      <td><%= @rental.long_term_value %></td>
       <td><%= @long_term_airbnb %></td>
       <td>-</td>
     </tr>
   </tbody>
 </table>
+
+<%= link_to t("search.link_new_search"), :root %>

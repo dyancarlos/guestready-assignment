@@ -17,8 +17,6 @@ class RentalsController < ApplicationController
   def long_term_renting
     begin
       @search_rental   ||= SearchRentalService.new(params[:address])
-      @address           = params[:address]
-      @long_term_default = params[:long_term_value]
       @long_term_airbnb  = @search_rental.long_term
     rescue
       redirect_to :root, flash: { error: t("rental.form.error") }

@@ -28,7 +28,7 @@ class SearchRentalService
   def params
     {
       'room_type'       => 'Entire home/apt',
-      'duration'        => '1_year',
+      'duration'        => '1_month',
       'occupancy_rate'  => '100',
       'person_capacity' => '2',
       'currency'       => 'USD',

@@ -5,7 +5,10 @@ en:
     long_term: "Long Term"
     long_term_airbnb: "Long Term Airbnb"
     difference: "Difference"
+    profitable: "Profitable?"
     link_new_search: "New Search"
+    profit_yes: "Yes"
+    profit_no: "No"
   rental:
     form:
       error: "Ops! Something went wrong!"

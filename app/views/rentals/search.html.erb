@@ -7,14 +7,16 @@
       <th><%= t("search.long_term") %></th>
       <th><%= t("search.long_term_airbnb") %></th>
       <th><%= t("search.difference") %></th>
+      <th><%= t("search.profitable") %></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><%= @rental.address %></td>
-      <td><%= @rental.long_term_value %></td>
-      <td><%= @long_term_airbnb %></td>
-      <td>-</td>
+      <td><%= number_to_currency @rental.long_term_value %></td>
+      <td><%= @search_rental.long_term %></td>
+      <td><%= number_to_currency @profit.rental_difference %></td>
+      <td><%= @profit.profitable? %></td>
     </tr>
   </tbody>
 </table>

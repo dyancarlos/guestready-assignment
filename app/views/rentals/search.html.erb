@@ -1,7 +1,18 @@
-<h1>Search</h1>
+<h1><%= t("search.title") %></h1>
 
-Default: <%= @long_term_default %>
-
-<br />
-
-Airbnb: <%= @long_term_airbnb %>
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Long Term</th>
+      <th>Long Term Airbnb</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @long_term_default %></td>
+      <td><%= @long_term_airbnb %></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>

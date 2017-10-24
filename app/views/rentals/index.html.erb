@@ -1,7 +1,9 @@
+<h1><%= t("rental.form.title") %></h1>
+
 <%= validation @rental %>
 
 <%= form_tag search_rentals_path, method: :get do %>
   <%= text_field_tag :address %><br />
-  <%= text_field_tag :long_term_value %><br />
-  <%= submit_tag t("rental.form.submit") %>
+  <%= text_field_tag :long_term_value, "", placeholder: t("rental.form.long_term_value") %><br />
+  <%= submit_tag t("rental.form.submit"), class: "button-primary" %>
 <% end %>

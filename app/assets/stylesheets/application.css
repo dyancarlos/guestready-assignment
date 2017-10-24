@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.validation,
+.flash-message.error {
+  padding: 10px;
+  background: #D01F3C;
+  color: #FFF;
+  margin-bottom: 20px;
+}

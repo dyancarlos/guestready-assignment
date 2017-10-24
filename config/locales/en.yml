@@ -1,6 +1,11 @@
 en:
+  search:
+    title: "Search Result"
   rental:
     form:
+      error: "Ops! Something went wrong!"
+      title: "Search Long Term Renting Airbnb"
       submit: "Search"
+      long_term_value: "Long term value"
   validations:
     error: "There were some errors:"

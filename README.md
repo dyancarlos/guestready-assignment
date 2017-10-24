@@ -1,24 +1,25 @@
-# README
+# GuestReady Assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Intro
+The idea behind this project is find out if is profitable to rent Airbnb or not.
+To use the application, the only thing you need to do is pass the Address and Long Term Value.
 
-Things you may want to cover:
+## Considerations
+- The currency used was USD
+- Search is considering Airbnb value per month
 
-* Ruby version
+## Code
+The project is very simple:
+- rails 5
+- rentals controller
+- rental model
+- services to search the information
+- tests
+- some CSS
 
-* System dependencies
+## Tests
+RSpec was used to cover the code, to run execute:
+`rspec`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Database
+No database needed.
